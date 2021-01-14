@@ -59,6 +59,15 @@ class Persona {
   }
   }
 }
+function crearInstanciaPersona(nombre,apellido,edad,dir) {
+  const persona = new Persona (nombre,apellido,edad,dir);
+  return persona;
+}
+function agregarMetodo() {
+  Persona.prototype.datos = function() {
+    retur this.nombre + '', '' + this.edad + "años";
+  }
+}
 // No modificar nada debajo de esta línea
 // --------------------------------
 
